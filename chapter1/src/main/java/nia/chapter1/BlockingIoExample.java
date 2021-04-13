@@ -19,7 +19,7 @@ public class BlockingIoExample {
      * */
     public void serve(int portNumber) throws IOException {
         ServerSocket serverSocket = new ServerSocket(portNumber);
-        Socket clientSocket = serverSocket.accept();
+        Socket clientSocket = serverSocket.accept(); // 服务端阻塞等待客户端连接
         BufferedReader in = new BufferedReader(
                 new InputStreamReader(clientSocket.getInputStream()));
         PrintWriter out =
