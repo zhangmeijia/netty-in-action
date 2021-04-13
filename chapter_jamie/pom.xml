@@ -14,7 +14,7 @@
     <version>2.0-SNAPSHOT</version>
 
     <packaging>jar</packaging>
-    <name>Chapter 1. Netty—asynchronous and event-driven</name>
+    <name>Chapter Jamie. Netty </name>
     <description>
         Build an Echo Server and Client
     </description>
