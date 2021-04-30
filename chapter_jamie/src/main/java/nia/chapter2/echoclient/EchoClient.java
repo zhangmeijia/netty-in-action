@@ -23,13 +23,8 @@ public class EchoClient {
     }
 
     public static void main(String[] args) throws Exception {
-        if (args.length != 2) {
-            System.err.println("Usage:" + EchoClient.class.getSimpleName()+"<host><port>");
-            return;
-        }
-
-        String host = args[0];
-        int port = Integer.parseInt(args[1]);
+        String host = "localhost";
+        int port = 8999;
         new EchoClient(host, port).start();
     }
 

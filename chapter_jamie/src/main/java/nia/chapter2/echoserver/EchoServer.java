@@ -19,12 +19,7 @@ public class EchoServer {
     }
 
     public static void main(String[] args) throws Exception {
-        if (args.length != 1) {
-            System.err.println("Usage：" + EchoServer.class.getSimpleName());
-            return;
-        }
-
-        int port = Integer.parseInt(args[0]); //←设置端口值（如果端口参数的格式不正确，则抛出一个NumberFormatException）
+        int port = 8999; //←设置端口值（如果端口参数的格式不正确，则抛出一个NumberFormatException）
         new EchoServer(port).start(); //←调用服务器的start()方法
     }
 

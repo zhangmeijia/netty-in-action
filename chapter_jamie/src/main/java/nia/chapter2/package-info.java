@@ -29,5 +29,13 @@
  *  3，为服务器连接创建了一个InetSocketAddress实例；
  *  4，当连接被建立时，一个EchoClientHandler实例会被安装到（该Channel的）ChannelPipeline中；
  *  5，在一切都设置完成后，调用Bootstrap.connect()方法连接到远程节点；
+ *
+ *
+ *  启动测试：
+ *  下面是发生的事：
+ *  （1）一旦客户端建立连接，它就发送它的消息——Netty rocks!；
+ *  （2）服务器报告接收到的消息，并将其回送给客户端；
+ *  （3）客户端报告返回的消息并退出。
+ *
  */
 package nia.chapter2;
